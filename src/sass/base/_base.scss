@@ -1,0 +1,74 @@
+:root {
+  --font-size-mobile-tablet: 12px;
+  --line-height-mobile-tablet: 1.33:
+  --font-size-desktop: 20px;
+  --line-height-desktop: 1.2;
+  --main-black-color: #000000;
+  --main-accent-color: #FF6B08;
+  }
+
+  html{
+    height: 100%;
+    
+  }
+
+  body{
+    height: 100%;
+    font-family: Roboto, sans-serif;
+    // background-color: #ffffff;
+    
+	
+
+  
+  }
+
+  
+  // @media (prefers-color-scheme: dark) {
+  //   body{ 
+  //     background-color: #1d2125;
+  //     color: #fff;
+  //   }
+
+  //   h2,h3,p,span{
+  //     color: #fff;
+  //   }
+   
+  // }
+  
+  .body-wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 1 auto;
+  }
+
+
+.container {
+  max-width: 480px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(tablet) {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include mq(desktop) {
+    max-width: 1280px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.spinner-border{
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(138, 13, 13);
+}
+
